@@ -25,6 +25,19 @@
                 width: 700px;
                 margin: 100px auto;
             }
+            .item {
+                box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+                padding: 24px;
+
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                column-gap: 24px;
+                row-gap: 32px;
+                align-items: center;
+            }
+            .accordion__texts {
+                grid-column: 2;
+            }
 
             .accordion__icon {
                 width: 24px;
@@ -37,7 +50,7 @@
                 font-size: 24px;
                 color: #087f5b;
             }
-            .item p {
+            .accordion__texts p {
                 line-height: 1.6;
                 margin-bottom: 24px;
             }
@@ -54,7 +67,7 @@
     <body>
         <div class="accordion">
             <div class="item">
-                <p class="accordion__number">01</p>
+                <p class="accordion__number">02</p>
                 <p class="accordion__title">
                     How long do I have to return my Chair ?
                 </p>
@@ -72,30 +85,33 @@
                         d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                     />
                 </svg>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sint, aliquid repellat fugit assumenda reiciendis nostrum
-                    amet inventore quis. Dolorum sit repellendus animi ad
-                    temporibus, similique optio possimus repellat itaque rem.
-                </p>
-                <ul>
-                    <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eveniet, optio.
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eveniet, optio.
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eveniet, optio.
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eveniet, optio.
-                    </li>
-                </ul>
+                <div class="accordion__texts">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sint, aliquid repellat fugit assumenda reiciendis
+                        nostrum amet inventore quis. Dolorum sit repellendus
+                        animi ad temporibus, similique optio possimus repellat
+                        itaque rem.
+                    </p>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eveniet, optio.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eveniet, optio.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eveniet, optio.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eveniet, optio.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>
