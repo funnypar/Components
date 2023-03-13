@@ -35,6 +35,7 @@
                 padding: 32px;
                 padding-left: 86px;
                 border-radius: 8px;
+                position: relative;
 
                 display: flex;
                 gap: 86px;
@@ -48,10 +49,41 @@
             .carousel__blockquote__name {
                 font-size: 14px;
                 color: #c3fae8;
+                margin-top: 24px;
             }
             .carousel__blockquote__job {
                 font-size: 12px;
                 color: #c3fae8;
+                margin-top: 12px;
+            }
+            .btn {
+                background-color: white;
+                border: none;
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                border-radius: 50%;
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            .btn-icon {
+                height: 24px;
+                width: 24px;
+                stroke: #087f5b;
+            }
+            .btn__left {
+                left: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .btn__right {
+                right: 0;
+                top: 50%;
+                transform: translate(50%, -50%);
             }
         </style>
     </head>
@@ -63,15 +95,14 @@
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Hic, consequatur maxime harum dolorum deserunt omnis
                     corporis iusto sunt quidem nobis molestiae voluptates
-                    ratione exercitationem quo, ipsam minus voluptatem ullam
-                    inventore."
+                    ratione exercitationem quo."
                 </p>
                 <p class="carousel__blockquote__name">Jadi Mirmirani</p>
                 <p class="carousel__blockquote__job">
                     Hacker,System admin, Funny man , ...
                 </p>
             </blockquote>
-            <button class="btn">
+            <button class="btn btn__left">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -87,7 +118,7 @@
                     />
                 </svg>
             </button>
-            <button class="btn">
+            <button class="btn btn__right">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
