@@ -49,10 +49,18 @@
                 justify-content: center;
                 align-items: center;
             }
+            .pagination__btn:hover {
+                background-color: #087f5b;
+                stroke: white;
+            }
+
             .btn_icon {
                 stroke: #087f5b;
                 height: 24px;
                 width: 24px;
+            }
+            .pagination__btn:hover .btn_icon {
+                stroke: white;
             }
             .pagination__pages {
                 width: 70%;
@@ -60,6 +68,24 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+            }
+            .pagination__page {
+                height: 28px;
+                width: 28px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .pagination__page:hover {
+                background-color: #087f5b;
+                color: white;
+            }
+            .pagination__page__active {
+                background-color: #087f5b;
+                color: white;
             }
         </style>
     </head>
@@ -84,11 +110,11 @@
             <div class="pagination__pages">
                 <span class="pagination__page">1</span>
                 <span class="pagination__page">2</span>
-                <span class="pagination__page">3</span>
+                <span class="pagination__page pagination__page__active">3</span>
                 <span class="pagination__page">4</span>
                 <span class="pagination__page">5</span>
                 <span class="pagination__page">6</span>
-                <span class="pagination__page">...</span>
+                <span>...</span>
                 <span class="pagination__page">23</span>
             </div>
             <button class="pagination__btn">
@@ -108,12 +134,9 @@
                 </svg>
             </button>
         </div>
-        <!-- <footer>
-            <p>
-                This project created by Mopano but in Jonas Schmedtmann's
-                course.
-            </p>
+        <footer>
+            <p>This project created by Mopano.</p>
             <p>&#169;2023</p>
-        </footer> -->
+        </footer>
     </body>
 </html>
