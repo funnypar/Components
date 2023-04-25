@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        /* 10px / 16px = 0.625 = 62.5% */
+        /* Percentage of user's browser font-size setting */
+        font-size: 62.5%;
+    }
+}
+
+@layer components {
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center-evenly-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .center-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .center-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

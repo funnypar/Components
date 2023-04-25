@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./dist/output.css" />
+        <style>
+            /*
+                        --- 01 TYPOGRAPHY SYSTEM
+            - Font sizes (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+            - Font weights
+            Default: 500
+            Medium: 600
+            Bold: 800
+
+            - Line heights
+            Default: 1
+            Small: 1.05
+            Medium: 1.2
+            Paragraph default: 1.6
+
+            - Letter spacing
+            -0.5px
+            0.75px
+
+            --- 02 COLORS
+            "Light-red": "hsl(0, 100%, 67%)",
+            "Orangey-yellow": "hsl(39, 100%, 56%)",
+            "Green-teal": "hsl(166, 100%, 37%)",
+            "Cobalt-blue": "hsl(234, 85%, 45%)",
+
+            - Primary: #e67e22
+
+            - Tints:
+            #fdf2e9
+            #fae5d3
+            #eb984e
+            - Shades:
+            #cf711f
+            #45260a
+
+            - Accents:
+
+            - Greys
+            #888
+            #767676 (lightest grey allowed on #fff)
+            #6f6f6f (lightest grey allowed on #fdf2e9)
+            #555
+            #333
+
+            --- 05 SHADOWS
+            0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+            --- 06 BORDER-RADIUS
+            Default: 3rem
+            Medium: 11px
+
+            --- 07 WHITESPACE
+            - Spacing system (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            ----------------------------------------------------------------------------
+            */
+        </style>
+
+        <title>Frontend Mentor | Results summary component</title>
+    </head>
+    <body class="font-Hanken-Grotesk leading-none font-medium center h-screen">
+        <main
+            class="w-w-box h-h-box bg-Light-red rounded-box overflow-hidden flex justify-between"
+        >
+            <section
+                class="bg-Cobalt-blue w-1/2 h-full rounded-box text-white center-evenly-col"
+            >
+                <h2 class="text-3xl text-Light-lavender">Your Result</h2>
+                <h3
+                    class="text-9xl bg-red-600 h-64 w-64 rounded-full center-col"
+                >
+                    76
+                    <span class="text-2xl block text-Dark-lavender"
+                        >of 100</span
+                    >
+                </h3>
+                <h3 class="text-5xl font-semibold">Great</h3>
+                <p class="text-center w-4/6 text-2xl text-Darker-lavender">
+                    You scored higher than 65% of the people who have taken
+                    these tests.
+                </p>
+            </section>
+            <section class="p-12 w-1/2">
+                <h2 class="text-3xl text-Dark-gray-blue">Summary</h2>
+                <div class="w-full">
+                    <div class="bg-white center-row p-5 text-2xl rounded-xl">
+                        <h4 class="center-row text-Light-red">
+                            <span class="mr-4"
+                                ><img
+                                    src="./assets/images/icon-reaction.svg"
+                                    alt="reaction" /></span
+                            >Reaction
+                        </h4>
+                        <p class="text-Darkest-lavender">
+                            <span class="text-Dark-gray-blue">80 </span>/ 100
+                        </p>
+                    </div>
+                    <div class="bg-white center-row p-5 text-2xl rounded-xl">
+                        <h4 class="center-row text-Orangey-yellow">
+                            <span class="mr-4"
+                                ><img
+                                    src="./assets/images/icon-memory.svg"
+                                    alt="memory" /></span
+                            >Memory
+                        </h4>
+                        <p class="text-Darkest-lavender">
+                            <span class="text-Dark-gray-blue">92 </span>/ 100
+                        </p>
+                    </div>
+                    <div class="bg-white center-row p-5 text-2xl rounded-xl">
+                        <h4 class="center-row text-Green-teal">
+                            <span class="mr-4"
+                                ><img
+                                    src="./assets/images/icon-verbal.svg"
+                                    alt="verbal" /></span
+                            >Verbal
+                        </h4>
+                        <p class="text-Darkest-lavender">
+                            <span class="text-Dark-gray-blue">61 </span>/ 100
+                        </p>
+                    </div>
+                    <div class="bg-white center-row p-5 text-2xl rounded-xl">
+                        <h4 class="center-row text-Violet-blue">
+                            <span class="mr-4"
+                                ><img
+                                    src="./assets/images/icon-visual.svg"
+                                    alt="Visual" /></span
+                            >Visual
+                        </h4>
+                        <p class="text-Darkest-lavender">
+                            <span class="text-Dark-gray-blue">72 </span>/ 100
+                        </p>
+                    </div>
+                </div>
+                <!-- <button href="#">Continue</button> -->
+            </section>
+        </main>
+    </body>
+</html>
