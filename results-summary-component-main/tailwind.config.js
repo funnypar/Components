@@ -19,6 +19,7 @@ module.exports = {
                 "Darker-lavender": "hsla(241, 100%, 89%, 0.8)",
                 "Darkest-lavender": "hsla(241, 100%, 89%, 0.6)",
                 "Dark-gray-blue": "hsl(224, 30%, 27%)",
+                "Light-gray-blue": "hsl(224, 30%, 27%, 0.6)",
                 "Light-slate-blue": "hsl(252, 100%, 67%)",
                 "Light-royal-blue": "hsl(241, 81%, 54%)",
                 "Violet-blue": "hsla(256, 72%, 46%, 1)",
