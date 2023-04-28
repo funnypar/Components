@@ -83,10 +83,10 @@
     </head>
     <body class="font-Hanken-Grotesk leading-none font-medium center h-screen">
         <main
-            class="w-w-box h-h-box rounded-box overflow-hidden flex justify-between shadow-2xl"
+            class="w-w-box h-h-box rounded-box overflow-hidden shadow-2xl desktop-box max-mobile:mobile-box max-mobile:h-screen max-mobile:rounded-none"
         >
             <section
-                class="bg-gradient-to-b from-Light-slate-blue to-Light-royal-blue w-1/2 h-full rounded-box text-white center-evenly-col pt-3 pb-8"
+                class="bg-gradient-to-b from-Light-slate-blue to-Light-royal-blue w-1/2 h-full rounded-box text-white center-evenly-col pt-3 pb-8 max-mobile:w-full max-mobile:rounded-b-box max-mobile: rounded-t-none"
             >
                 <h2 class="text-3xl text-Light-lavender font-extrabold">
                     Your Result
@@ -105,7 +105,9 @@
                     these tests.
                 </p>
             </section>
-            <section class="pr-12 pl-12 pt-8 pb-8 w-1/2 h-full evenly-col">
+            <section
+                class="pr-12 pl-12 pt-8 pb-8 w-1/2 h-full evenly-col max-mobile:w-full"
+            >
                 <h2 class="text-3xl text-Dark-gray-blue font-extrabold">
                     Summary
                 </h2>

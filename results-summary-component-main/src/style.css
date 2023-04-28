@@ -11,6 +11,15 @@
 }
 
 @layer components {
+    .desktop-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile-box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
     .center {
         display: flex;
         justify-content: center;

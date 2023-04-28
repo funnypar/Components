@@ -522,6 +522,11 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.desktop-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -560,10 +565,6 @@ html {
 
 .block {
   display: block;
-}
-
-.flex {
-  display: flex;
 }
 
 .h-3\/4 {
@@ -606,10 +607,6 @@ html {
   width: 60rem;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -624,6 +621,11 @@ html {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-t-none {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .bg-Bg-Green-teal {
@@ -797,18 +799,49 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
+@media not all and (min-width: 375px) {
+  .max-mobile\:mobile-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
 .hover\:bg-gradient-to-b:hover {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+@media not all and (min-width: 375px) {
+  .max-mobile\:h-screen {
+    height: 100vh;
+  }
+
+  .max-mobile\:w-full {
+    width: 100%;
+  }
+
+  .max-mobile\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .max-mobile\:rounded-b-box {
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+  }
+
+  .max-mobile\:rounded-t-none {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .max-mobile\:rounded-t-box {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+  }
 }

@@ -5,6 +5,9 @@ module.exports = {
         fontFamily: {
             "Hanken-Grotesk": "Hanken Grotesk",
         },
+        screens: {
+            mobile: "375px",
+        },
         extend: {
             colors: {
                 "Light-red": "hsl(0, 100%, 67%)",
