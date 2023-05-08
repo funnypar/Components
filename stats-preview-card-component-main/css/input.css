@@ -22,4 +22,9 @@
         display: flex;
         justify-content: space-between;
     }
+    .right-side {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
