@@ -19,12 +19,16 @@
         justify-content: center;
     }
     .box {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 0.85fr;
     }
-    .right-side {
+    .left-side {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+    }
+    .left-elements {
+        display: flex;
+        justify-content: space-between;
     }
 }
