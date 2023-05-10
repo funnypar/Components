@@ -22,6 +22,11 @@
         display: grid;
         grid-template-columns: 1fr 0.85fr;
     }
+    .box-mobile {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-columns: 1fr;
+    }
     .left-side {
         display: flex;
         justify-content: space-between;
@@ -29,6 +34,11 @@
     }
     .left-elements {
         display: flex;
+        justify-content: space-between;
+    }
+    .left-elements-mobile {
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 }

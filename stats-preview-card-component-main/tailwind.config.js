@@ -2,6 +2,9 @@
 module.exports = {
     content: ["./**/*.{html,js}"],
     theme: {
+        screens: {
+            mobile: "375px",
+        },
         extend: {
             colors: {
                 "Very-dark-blue": "hsl(233, 47%, 7%)",
@@ -17,9 +20,11 @@ module.exports = {
             },
             height: {
                 "box-height": "35rem",
+                "box-height-mobile": "60rem",
             },
             width: {
                 "box-width": "85rem",
+                "box-width-mobile": "30rem",
                 "img-width": "90rem",
             },
             lineHeight: {
