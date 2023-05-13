@@ -14,9 +14,13 @@ module.exports = {
             },
             width: {
                 box: "35rem",
+                45: "45%",
             },
             backgroundImage: {
                 box: "url('/images/bg-pattern-card.svg')",
+            },
+            letterSpacing: {
+                box: ".25rem",
             },
         },
     },
