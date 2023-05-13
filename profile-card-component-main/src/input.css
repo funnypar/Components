@@ -13,7 +13,19 @@
         font-family: "Kumbh Sans", sans-serif;
         line-height: 1;
         font-weight: 400;
-        background: url("../images/bg-pattern-top.svg") -40rem -60rem no-repeat,
+        background: url("../images/bg-pattern-top.svg") -35rem -60rem no-repeat,
             url("../images/bg-pattern-bottom.svg") 70rem 40rem no-repeat;
+    }
+}
+@layer components {
+    .box {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
     }
 }

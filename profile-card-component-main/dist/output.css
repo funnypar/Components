@@ -434,7 +434,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   line-height: 1;
   font-weight: 400;
-  background: url("../images/bg-pattern-top.svg") -40rem -60rem no-repeat,
+  background: url("../images/bg-pattern-top.svg") -35rem -60rem no-repeat,
             url("../images/bg-pattern-bottom.svg") 70rem 40rem no-repeat;
 }
 
@@ -538,11 +538,93 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.box {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.relative{
+  position: relative;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-box{
+  height: 38rem;
+}
+
 .h-screen{
   height: 100vh;
+}
+
+.w-box{
+  width: 35rem;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.border-8{
+  border-width: 8px;
+}
+
+.border-4{
+  border-width: 4px;
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-Dark-cyan{
   --tw-bg-opacity: 1;
   background-color: hsl(185 75% 39% / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-box{
+  background-image: url('/images/bg-pattern-card.svg');
+}
+
+.outline-8{
+  outline-width: 8px;
+}
+
+.outline-white{
+  outline-color: #fff;
 }
