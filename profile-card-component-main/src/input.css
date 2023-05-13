@@ -13,5 +13,7 @@
         font-family: "Kumbh Sans", sans-serif;
         line-height: 1;
         font-weight: 400;
+        background: url("../images/bg-pattern-top.svg") -40rem -60rem no-repeat,
+            url("../images/bg-pattern-bottom.svg") 70rem 40rem no-repeat;
     }
 }
