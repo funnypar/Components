@@ -9,6 +9,9 @@ module.exports = {
                 "Dark-Grayish-Magenta": "hsl(303, 10%, 53%)",
                 "Light-Grayish-Magenta": "hsl(300, 24%, 96%)",
             },
+            width: {
+                "card-text": "95%",
+            },
         },
     },
     plugins: [],

@@ -20,6 +20,11 @@
     }
 }
 @layer components {
+    .general {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 5rem;
+    }
     .topPart {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -33,5 +38,15 @@
         flex-direction: column;
         justify-content: space-evenly;
         gap: 1rem;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }

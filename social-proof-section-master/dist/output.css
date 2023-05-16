@@ -573,6 +573,12 @@ body {
   }
 }
 
+.general {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+}
+
 .topPart {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -588,6 +594,18 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .sr-only{
@@ -705,16 +723,12 @@ body {
   margin-right: 1.5rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
 .mt-10{
   margin-top: 2.5rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
 }
 
 .box-border{
@@ -820,6 +834,14 @@ body {
   height: 83.333333%;
 }
 
+.h-72{
+  height: 18rem;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
 .w-2\/5{
   width: 40%;
 }
@@ -830,6 +852,10 @@ body {
 
 .w-4\/5{
   width: 80%;
+}
+
+.w-card-text{
+  width: 95%;
 }
 
 .flex-shrink{
@@ -1650,8 +1676,16 @@ body {
   border-radius: 0.25rem;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .rounded-b{
@@ -1783,6 +1817,11 @@ body {
   background-color: hsl(300 24% 96% / var(--tw-bg-opacity));
 }
 
+.bg-Very-Dark-Magenta{
+  --tw-bg-opacity: 1;
+  background-color: hsl(300 43% 22% / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1907,14 +1946,28 @@ body {
   padding: 1rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-64{
   padding-left: 16rem;
   padding-right: 16rem;
 }
 
-.py-56{
-  padding-top: 14rem;
-  padding-bottom: 14rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt-40{
+  padding-top: 10rem;
 }
 
 .pt-9{
@@ -1987,8 +2040,17 @@ body {
   line-height: 1;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .uppercase{
@@ -2064,6 +2126,11 @@ body {
   color: hsl(303 10% 53% / var(--tw-text-opacity));
 }
 
+.text-Soft-Pink{
+  --tw-text-opacity: 1;
+  color: hsl(333 80% 67% / var(--tw-text-opacity));
+}
+
 .text-Very-Dark-Magenta{
   --tw-text-opacity: 1;
   color: hsl(300 43% 22% / var(--tw-text-opacity));
@@ -2076,6 +2143,11 @@ body {
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline{
