@@ -14,5 +14,24 @@
         font-family: "League Spartan", sans-serif;
         line-height: 1;
         font-weight: 400;
+        background: url("../images/bg-pattern-top-desktop.svg") 0rem 0rem
+                no-repeat,
+            url("../images/bg-pattern-bottom-desktop.svg") 20rem 10rem no-repeat;
+    }
+}
+@layer components {
+    .topPart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .rightBox {
+        display: flex;
+        justify-content: space-around;
+    }
+    .boxs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1rem;
     }
 }
