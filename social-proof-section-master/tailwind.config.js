@@ -12,6 +12,9 @@ module.exports = {
             width: {
                 "card-text": "95%",
             },
+            screens: {
+                mobile: "375px",
+            },
         },
     },
     plugins: [],
