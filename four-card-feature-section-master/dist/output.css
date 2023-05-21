@@ -540,6 +540,12 @@ body {
   width: 100%;
 }
 
+@media (min-width: 375px){
+  .container{
+    max-width: 375px;
+  }
+}
+
 @media (min-width: 640px){
   .container{
     max-width: 640px;
@@ -596,10 +602,6 @@ body {
   grid-template-rows: 0.5fr 0.5fr 2fr;
 }
 
-.card--1 {
-  grid-row: 1 / 3;
-}
-
 .card--1::before {
   content: "";
   height: 5px;
@@ -624,17 +626,20 @@ body {
   display: block;
 }
 
-.card--4 {
-  grid-row: -1 / -3;
-  grid-column: 3;
-}
-
 .card--4::before {
   content: "";
   height: 5px;
   width: 100%;
   background-color: hsl(212, 86%, 64%);
   display: block;
+}
+
+@media only screen and (max-width: 375px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .sr-only{
@@ -1956,10 +1961,6 @@ body {
   padding-bottom: 6rem;
 }
 
-.pt-24{
-  padding-top: 6rem;
-}
-
 .text-left{
   text-align: left;
 }
@@ -2453,9 +2454,26 @@ body {
   content: var(--tw-content);
 }
 
+@media (min-width: 375px){
+  .mobile-size\:card--1--loc {
+    grid-row: 1 / 3;
+  }
+
+  .mobile-size\:card--4--loc {
+    grid-row: -1 / -3;
+    grid-column: 3;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
+  }
+
+  @media (min-width: 375px){
+    .sm\:container{
+      max-width: 375px;
+    }
   }
 
   @media (min-width: 640px){
@@ -2509,6 +2527,52 @@ body {
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
+}
+
+@media not all and (min-width: 375px){
+  .max-mobile-size\:order-1{
+    order: 1;
+  }
+
+  .max-mobile-size\:w-3\/5{
+    width: 60%;
+  }
+
+  .max-mobile-size\:pt-16{
+    padding-top: 4rem;
+  }
+
+  .max-mobile-size\:pt-20{
+    padding-top: 5rem;
+  }
+
+  .max-mobile-size\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .max-mobile-size\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 375px){
+  .mobile-size\:w-3\/4{
+    width: 75%;
+  }
+
+  .mobile-size\:justify-self-end{
+    justify-self: end;
+  }
+
+  .mobile-size\:p-24{
+    padding: 6rem;
+  }
+
+  .mobile-size\:pb-24{
+    padding-bottom: 6rem;
+  }
 }
 
 @media (min-width: 640px){

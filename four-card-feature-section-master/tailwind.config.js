@@ -11,6 +11,9 @@ module.exports = {
             width: {
                 container: "35%",
             },
+            screens: {
+                "mobile-size": "375px",
+            },
         },
     },
     plugins: [],

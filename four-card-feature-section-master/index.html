@@ -70,13 +70,19 @@ Medium: 11px
         </style>
     </head>
     <body class="bg-Very-Light-Gray">
-        <section class="text-Very-Dark-Blue p-24 h-screen section-container">
+        <section
+            class="text-Very-Dark-Blue h-screen section-container mobile-size:p-24 max-mobile-size:pt-20"
+        >
             <div class="text-center topPart-container">
-                <h2 class="font-extralight text-5xl">
+                <h2 class="font-extralight text-5xl max-mobile-size:text-3xl">
                     Reliable, efficient delivery
                 </h2>
-                <h1 class="text-5xl">Powered by Technology</h1>
-                <p class="text-Grayish-Blue text-lg w-container">
+                <h1 class="text-5xl max-mobile-size:text-3xl">
+                    Powered by Technology
+                </h1>
+                <p
+                    class="text-Grayish-Blue text-lg w-container max-mobile-size:text-base max-mobile-size:w-3/5"
+                >
                     Our Artificial Intelligence powered tools use millions of
                     project data points to ensure that your project is
                     successful
@@ -84,7 +90,7 @@ Medium: 11px
             </div>
             <div class="cards items-center pb-24">
                 <div
-                    class="card--1 overflow-hidden rounded-lg h-80 w-4/5 justify-self-end shadow-xl"
+                    class="card--1 mobile-size:card--1--loc overflow-hidden rounded-lg h-80 w-4/5 mobile-size:w-3/4 mobile-size:justify-self-end shadow-xl"
                 >
                     <div class="p-10 bg-white h-full card relative">
                         <h4 class="text-xl font-semibold">Supervisor</h4>
@@ -116,7 +122,7 @@ Medium: 11px
                 </div>
 
                 <div
-                    class="card--4 overflow-hidden rounded-lg h-80 w-4/5 justify-self-start shadow-xl"
+                    class="card--4 mobile-size:card--4--loc max-mobile-size:order-1 overflow-hidden rounded-lg h-80 w-4/5 justify-self-start shadow-xl"
                 >
                     <div class="p-10 bg-white h-full card relative">
                         <h4 class="text-xl font-semibold">Calculator</h4>
