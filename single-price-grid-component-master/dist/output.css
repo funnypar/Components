@@ -1727,6 +1727,16 @@ body {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-Grayish-Blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(218 22% 67% / var(--tw-bg-opacity));
+}
+
+.bg-Light-Gray{
+  --tw-bg-opacity: 1;
+  background-color: hsl(204 43% 93% / var(--tw-bg-opacity));
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
