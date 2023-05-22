@@ -1,0 +1,15 @@
+{
+    "name": "single-price-grid-component-master",
+    "version": "1.0.0",
+    "description": "![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "mopano",
+    "license": "ISC",
+    "devDependencies": {
+        "tailwindcss": "^3.3.2"
+    }
+}
