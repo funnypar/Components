@@ -15,3 +15,14 @@
         font-weight: 400;
     }
 }
+
+@layer components {
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .topPart {
+        grid-column: 1/3;
+    }
+}
