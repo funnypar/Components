@@ -72,22 +72,26 @@
     </head>
     <body class="bg-Light-Gray flex justify-center items-center h-screen">
         <section
-            class="h-2/3 w-1/2 rounded-xl box-container overflow-hidden shadow-2xl"
+            class="mobile-size:h-2/3 w-1/2 max-mobile-size:w-4/5 rounded-xl box-container overflow-hidden shadow-2xl"
         >
-            <div class="bg-white topPart p-20">
+            <div
+                class="bg-white min-mobile-size:topPart p-20 max-mobile-size:p-10"
+            >
                 <h1 class="text-3xl text-my-Cyan font-bold">
                     Join our community
                 </h1>
                 <h3 class="text-2xl text-Bright-Yellow mt-8 font-bold">
                     30-day, hassle-free money back guarantee
                 </h3>
-                <p class="text-2xl text-Grayish-Blue mt-4 w-11/12">
+                <p class="text-2xl text-Grayish-Blue mt-4 mobile-size:w-11/12">
                     Gain access to our full library of tutorials along with
                     expert code reviews. Perfect for any developers who are
                     serious about honing their skills.
                 </p>
             </div>
-            <div class="bg-my-Cyan flex flex-col justify-between px-20 py-14">
+            <div
+                class="bg-my-Cyan flex flex-col justify-between px-20 py-14 max-mobile-size:p-10"
+            >
                 <h2 class="text-3xl text-white font-bold">
                     Monthly Subscription
                 </h2>
@@ -109,10 +113,12 @@
                 </button>
             </div>
             <div
-                class="bg-my-Cyan-Light px-20 py-14 flex justify-between flex-col"
+                class="bg-my-Cyan-Light px-20 py-14 flex justify-between flex-col max-mobile-size:p-10"
             >
                 <h2 class="text-3xl text-white font-bold">Why Us</h2>
-                <p class="text-xl text-white w-my-width">
+                <p
+                    class="text-xl text-white w-my-width max-mobile-size:mt-8 max-mobile-size:w-3/5"
+                >
                     Tutorials by industry experts Peer &amp; expert code review
                     Coding exercises Access to our GitHub repos Community forum
                     Flashcard decks New videos every week
