@@ -434,6 +434,8 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1;
   font-weight: 400;
+  background: url("../images/bg-desktop.svg") no-repeat 0rem -14rem,
+            hsl(257, 40%, 49%);
 }
 
 *, ::before, ::after{
