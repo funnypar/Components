@@ -545,6 +545,12 @@ body {
   width: 100%;
 }
 
+@media (min-width: 375px){
+  .container{
+    max-width: 375px;
+  }
+}
+
 @media (min-width: 640px){
   .container{
     max-width: 640px;
@@ -815,10 +821,6 @@ body {
 
 .w-12{
   width: 3rem;
-}
-
-.w-2\/3{
-  width: 66.666667%;
 }
 
 .w-full{
@@ -2421,6 +2423,12 @@ body {
     width: 100%;
   }
 
+  @media (min-width: 375px){
+    .sm\:container{
+      max-width: 375px;
+    }
+  }
+
   @media (min-width: 640px){
     .sm\:container{
       max-width: 640px;
@@ -2486,6 +2494,112 @@ body {
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
+}
+
+@media not all and (min-width: 375px){
+  .max-mobile\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .max-mobile\:mt-12{
+    margin-top: 3rem;
+  }
+
+  .max-mobile\:mt-16{
+    margin-top: 4rem;
+  }
+
+  .max-mobile\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .max-mobile\:h-56{
+    height: 14rem;
+  }
+
+  .max-mobile\:w-56{
+    width: 14rem;
+  }
+
+  .max-mobile\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-mobile\:justify-center{
+    justify-content: center;
+  }
+
+  .max-mobile\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .max-mobile\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .max-mobile\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .max-mobile\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .max-mobile\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .max-mobile\:px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .max-mobile\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .max-mobile\:px-28{
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .max-mobile\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .max-mobile\:text-center{
+    text-align: center;
+  }
+
+  .max-mobile\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .max-mobile\:text-4\.5xl{
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 375px){
+  .mobile\:-mt-16{
+    margin-top: -4rem;
+  }
+
+  .mobile\:w-2\/3{
+    width: 66.666667%;
+  }
+
+  .mobile\:pr-28{
+    padding-right: 7rem;
+  }
 }
 
 @media (min-width: 640px){

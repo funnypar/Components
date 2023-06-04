@@ -19,6 +19,12 @@ module.exports = {
             boxShadow: {
                 "3xl": "0 1rem 1rem .5rem rgba(0, 0, 0, 0.2)",
             },
+            screens: {
+                mobile: "375px",
+            },
+            fontSize: {
+                "4.5xl": "2.5rem",
+            },
         },
     },
     plugins: [],

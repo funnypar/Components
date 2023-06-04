@@ -74,38 +74,42 @@ Medium: 11px
         </style>
     </head>
     <body>
-        <section class="px-24">
+        <section class="px-24 max-mobile:px-12">
             <img
                 src="./images/logo.svg"
                 alt="logo"
-                class="w-logo h-logo -mt-16"
+                class="w-logo h-logo max-mobile:w-56 max-mobile:h-56 -mt-16"
             />
-            <div class="flex justify-between gap-16">
+            <div class="flex justify-between gap-16 max-mobile:flex-col">
                 <img
                     src="./images/illustration-mockups.svg"
                     alt="illustration-mockups"
                     class="-mt-8"
                 />
-                <div class="mt-12">
+                <div class="max-mobile:text-center mt-12">
                     <h1
-                        class="font-heading text-5xl font-semibold leading-relaxed w-2/3"
+                        class="font-heading text-5xl font-semibold leading-relaxed mobile:w-2/3 max-mobile:text-4.5xl"
                     >
                         Build The Community Your Fans Will Love
                     </h1>
-                    <p class="text-2xl leading-normal pr-28 mt-6">
+                    <p
+                        class="text-2xl leading-normal mobile:pr-28 mt-6 max-mobile:px-6"
+                    >
                         Huddle re-imagines the way we build communities. You
                         have a voice, but so does your audience. Create
                         connections with your users as you engage in genuine
                         discussion.
                     </p>
                     <button
-                        class="bg-white text-Violet text-2xl px-24 py-5 rounded-full mt-8 shadow-3xl hover:bg-Soft-Magenta transition-all hover:text-white"
+                        class="bg-white text-Violet text-2xl px-24 py-5 max-mobile:px-28 max-mobile:py-3 rounded-full mt-8 shadow-3xl hover:bg-Soft-Magenta transition-all hover:text-white"
                     >
                         Register
                     </button>
                 </div>
             </div>
-            <footer class="flex gap-8 w-full justify-end -mt-16 pr-28">
+            <footer
+                class="flex gap-8 w-full justify-end mobile:-mt-16 mobile:pr-28 max-mobile:justify-center max-mobile:mt-24"
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
