@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <title>Frontend Mentor | Interactive rating component</title>
+
+        <style>
+            /*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+- Primary: #e67e22
+
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+- Shades: 
+#cf711f
+#45260a
+
+- Accents:
+
+- Greys
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+----------------------------------------------------------------------------
+*/
+        </style>
+    </head>
+    <body class="bg-Very-Dark-Blue container h-screen">
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+
+        <!-- You selected -->
+        <!-- Add rating here -->
+        <!-- out of 5 Thank you! We appreciate you taking the time to give a rating.
+        If you ever need more support, don’t hesitate to get in touch! -->
+
+        <!-- Thank you state end -->
+        <main
+            class="bg-Dark-Blue w-1/4 h-1/2 p-8 rounded-4xl flex flex-col justify-around"
+        >
+            <div class="h-14 w-14 rounded-full bg-Light-Dark-Blue container">
+                <img src="../images/icon-star.svg" alt="star" />
+            </div>
+            <h1 class="text-3xl font-bold">How did we do?</h1>
+            <p class="text-Light-Grey text-lg w-full -mt-4">
+                Please let us know how we did with your support request. All
+                feedback is appreciated to help us improve our offering!
+            </p>
+            <div class="flex justify-between">
+                <div
+                    class="h-14 w-14 bg-Light-Dark-Blue container rounded-full text-Light-Grey text-lg shadow-xl"
+                >
+                    1
+                </div>
+                <div
+                    class="h-14 w-14 bg-Light-Dark-Blue container rounded-full text-Light-Grey text-lg shadow-xl"
+                >
+                    2
+                </div>
+                <div
+                    class="h-14 w-14 bg-Light-Dark-Blue container rounded-full text-Light-Grey text-lg shadow-xl"
+                >
+                    3
+                </div>
+                <div
+                    class="h-14 w-14 bg-Light-Dark-Blue container rounded-full text-Light-Grey text-lg shadow-xl"
+                >
+                    4
+                </div>
+                <div
+                    class="h-14 w-14 bg-Light-Dark-Blue container rounded-full text-Light-Grey text-lg shadow-xl"
+                >
+                    5
+                </div>
+            </div>
+            <button
+                class="bg-my-Orange rounded-full w-full px-8 py-3 text-xl font-bold shadow-xl"
+            >
+                Submit
+            </button>
+        </main>
+    </body>
+</html>
