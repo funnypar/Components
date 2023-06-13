@@ -14,6 +14,9 @@ module.exports = {
             borderRadius: {
                 "4xl": "3rem",
             },
+            screens: {
+                mobile: "375px",
+            },
         },
     },
     plugins: [],
