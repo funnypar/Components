@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <title>Frontend Mentor | Interactive rating component</title>
+
+        <style>
+            /*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+18 / 20 / 30 / 36 
+
+- Font weights
+Default: 400
+Bold: 700
+
+- Line heights
+Default: 1
+
+
+- Letter spacing
+
+
+--- 02 COLORS
+- Light-Grey : hsl(217, 12%, 63%)
+- Medium-Grey: hsl(216, 12%, 54%)
+- Dark-Blue  : hsl(213, 19%, 18%)
+- Light-Dark-Blue : hsl(213, 19%, 25%)
+- Very-Dark-Blue  : hsl(216, 12%, 8%)
+- my-Orange : hsl(25, 97%, 53%)
+
+- Tints:
+
+
+- Accents:
+
+- Greys
+
+--- 05 SHADOWS
+0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+--- 06 BORDER-RADIUS
+Default: 48px
+Full: 100%
+
+--- 07 WHITESPACE
+- Spacing system (px)
+
+
+----------------------------------------------------------------------------
+*/
+        </style>
+    </head>
+    <body class="bg-Very-Dark-Blue container h-screen">
+        <main
+            class="bg-Dark-Blue w-1/4 h-1/2 p-8 rounded-4xl max-mobile:w-10/12"
+        >
+            <div class="flex flex-col justify-around h-full" id="home">
+                <div
+                    class="h-14 w-14 rounded-full bg-Light-Dark-Blue container"
+                >
+                    <img src="../images/icon-star.svg" alt="star" />
+                </div>
+                <h1 class="text-3xl font-bold">How did we do?</h1>
+                <p class="text-Light-Grey text-lg w-full -mt-4">
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve our offering!
+                </p>
+                <div class="flex justify-between">
+                    <a
+                        class="h-14 w-14 bg-Light-Dark-Blue container font-bold rounded-full text-Light-Grey text-lg shadow-xl cursor-pointer hover:bg-my-Orange hover:text-white transition-all visited:bg-Medium-Grey"
+                    >
+                        1
+                    </a>
+                    <a
+                        class="h-14 w-14 bg-Light-Dark-Blue container font-bold rounded-full text-Light-Grey text-lg shadow-xl cursor-pointer hover:bg-my-Orange hover:text-white transition-all visited:bg-Medium-Grey"
+                    >
+                        2
+                    </a>
+                    <a
+                        class="h-14 w-14 bg-Light-Dark-Blue container font-bold rounded-full text-Light-Grey text-lg shadow-xl cursor-pointer hover:bg-my-Orange hover:text-white transition-all visited:bg-Medium-Grey"
+                    >
+                        3
+                    </a>
+                    <a
+                        class="h-14 w-14 bg-Light-Dark-Blue container font-bold rounded-full text-Light-Grey text-lg shadow-xl cursor-pointer hover:bg-my-Orange hover:text-white transition-all visited:bg-Medium-Grey"
+                    >
+                        4
+                    </a>
+                    <a
+                        class="h-14 w-14 bg-Light-Dark-Blue container font-bold rounded-full text-Light-Grey text-lg shadow-xl cursor-pointer hover:bg-my-Orange hover:text-white transition-all visited:bg-Medium-Grey"
+                    >
+                        5
+                    </a>
+                </div>
+                <button
+                    class="bg-my-Orange rounded-full w-full px-8 py-3 text-xl font-bold shadow-xl hover:bg-white hover:text-my-Orange transition-all"
+                >
+                    Submit
+                </button>
+            </div>
+            <!-- Thank you state start -->
+            <div
+                class="flex justify-around flex-col items-center h-full text-center hidden"
+                id="state"
+            >
+                <img src="../images/illustration-thank-you.svg" alt="Thank" />
+                <h2
+                    class="bg-Light-Dark-Blue px-7 py-1 rounded-full text-my-Orange text-lg"
+                >
+                    You selected 4 out of 5
+                </h2>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-4xl font-bold">Thank you!</h1>
+                    <p class="text-lg text-Medium-Grey px-1">
+                        We appreciate you taking the time to give a rating. If
+                        you ever need more support, don’t hesitate to get in
+                        touch!
+                    </p>
+                </div>
+            </div>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>
