@@ -20,6 +20,9 @@ module.exports = {
                 box: "10%",
                 "box-top": "70%",
             },
+            borderWidth: {
+                border: "1px",
+            },
         },
     },
     plugins: [],
