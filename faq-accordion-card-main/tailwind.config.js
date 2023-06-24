@@ -15,6 +15,11 @@ module.exports = {
             screens: {
                 mobile: "375px",
             },
+            spacing: {
+                woman: "15%",
+                box: "10%",
+                "box-top": "70%",
+            },
         },
     },
     plugins: [],

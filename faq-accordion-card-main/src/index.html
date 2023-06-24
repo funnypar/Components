@@ -69,16 +69,38 @@ Medium: 11px
         </style>
         <title>Frontend Mentor | FAQ Accordion Card</title>
     </head>
-    <body class="h-screen">
-        <!-- How many team members can I invite? You can invite up to 2 additional
+    <body class="h-screen flex justify-center items-center">
+        <!--  You can invite up to 2 additional
         users on the Free plan. There is no limit on team members for the
-        Premium plan. What is the maximum file upload size? No more than 2GB.
-        All files in your account must fit your allotted storage space. How do I
-        reset my password? Click “Forgot password” from the login page or
+        Premium plan.  No more than 2GB.
+        All files in your account must fit your allotted storage space.  Click “Forgot password” from the login page or
         “Change password” from your profile page. A reset link will be emailed
-        to you. Can I cancel my subscription? Yes! Send us a message and we’ll
-        process your request no questions asked. Do you provide additional
-        support? Chat and email support is available 24/7. Phone lines are open
+        to you.  Yes! Send us a message and we’ll
+        process your request no questions asked.  Chat and email support is available 24/7. Phone lines are open
         during normal business hours. -->
+        <main class="h-2/3 w-2/3 bg-white flex gap-28 rounded-3xl relative">
+            <div class="h-full w-1/2 relative overflow-hidden rightSide">
+                <img
+                    src="../images/illustration-woman-online-desktop.svg"
+                    alt="woman"
+                    class="absolute top-1/2 -translate-y-1/2 -left-woman"
+                />
+            </div>
+            <img
+                src="../images/illustration-box-desktop.svg"
+                alt="box"
+                class="z-20 absolute top-box-top -translate-y-3/4 -left-box w-42 h-52"
+            />
+            <div class="w-1/2">
+                <h1>FAQ</h1>
+                <div>
+                    <h5>How many team members can I invite?</h5>
+                    <h5>HWhat is the maximum file upload size?</h5>
+                    <h5>How do I reset my password?</h5>
+                    <h5>Can I cancel my subscription?</h5>
+                    <h5>Do you provide additional support?</h5>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
