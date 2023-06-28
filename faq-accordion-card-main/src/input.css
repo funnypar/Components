@@ -24,4 +24,7 @@
             no-repeat;
         background-size: cover;
     }
+    .active {
+        font-weight: 700;
+    }
 }

@@ -70,15 +70,10 @@ Medium: 11px
         <title>Frontend Mentor | FAQ Accordion Card</title>
     </head>
     <body class="h-screen flex justify-center items-center">
-        <!--  You can invite up to 2 additional
-        users on the Free plan. There is no limit on team members for the
-        Premium plan.  No more than 2GB.
-        All files in your account must fit your allotted storage space.  Click “Forgot password” from the login page or
-        “Change password” from your profile page. A reset link will be emailed
-        to you.  Yes! Send us a message and we’ll
-        process your request no questions asked.  Chat and email support is available 24/7. Phone lines are open
-        during normal business hours. -->
-        <main class="h-2/3 w-2/3 bg-white flex gap-28 rounded-3xl relative">
+        <!--       -->
+        <main
+            class="h-2/3 w-2/3 bg-white flex gap-28 rounded-3xl relative shadow-2xl"
+        >
             <div class="h-full w-1/2 relative overflow-hidden rightSide">
                 <img
                     src="../images/illustration-woman-online-desktop.svg"
@@ -91,16 +86,119 @@ Medium: 11px
                 alt="box"
                 class="z-20 absolute top-box-top -translate-y-3/4 -left-box w-42 h-52"
             />
-            <div class="w-1/2">
-                <h1>FAQ</h1>
-                <div>
-                    <h5>How many team members can I invite?</h5>
-                    <h5>HWhat is the maximum file upload size?</h5>
-                    <h5>How do I reset my password?</h5>
-                    <h5>Can I cancel my subscription?</h5>
-                    <h5>Do you provide additional support?</h5>
+            <div class="w-1/2 flex flex-col gap-12 py-24 pr-24">
+                <h1 class="text-4xl font-bold">FAQ</h1>
+                <div class="flex flex-col gap-4">
+                    <div
+                        class="flex flex-col justify-between gap-2 border-b-border border-Light-grayish-blue pb-4"
+                    >
+                        <div class="flex justify-between items-center">
+                            <h5
+                                class="text-Very-dark-grayish-blue cursor-pointer transition-all hover:text-Soft-red"
+                            >
+                                How many team members can I invite?
+                            </h5>
+                            <img
+                                src="../images/icon-arrow-down.svg"
+                                alt="arrow"
+                                id="1"
+                                class="mr-4 h-2 cursor-pointer"
+                            />
+                        </div>
+                        <h6 class="text-sm text-Dark-grayish-blue hidden">
+                            You can invite up to 2 additional users on the Free
+                            plan. There is no limit on team members for the
+                            Premium plan.
+                        </h6>
+                    </div>
+                    <div
+                        class="flex flex-col justify-between gap-2 border-b-border border-Light-grayish-blue pb-4"
+                    >
+                        <div class="flex justify-between items-center">
+                            <h5
+                                class="text-Very-dark-grayish-blue cursor-pointer transition-all hover:text-Soft-red"
+                            >
+                                What is the maximum file upload size?
+                            </h5>
+                            <img
+                                src="../images/icon-arrow-down.svg"
+                                alt="arrow"
+                                id="1"
+                                class="mr-4 h-2 cursor-pointer"
+                            />
+                        </div>
+                        <h6 class="text-sm text-Dark-grayish-blue hidden">
+                            No more than 2GB. All files in your account must fit
+                            your allotted storage space.
+                        </h6>
+                    </div>
+                    <div
+                        class="flex flex-col justify-between gap-2 border-b-border border-Light-grayish-blue pb-4"
+                    >
+                        <div class="flex justify-between items-center">
+                            <h5
+                                class="text-Very-dark-grayish-blue cursor-pointer transition-all hover:text-Soft-red"
+                            >
+                                How do I reset my password?
+                            </h5>
+                            <img
+                                src="../images/icon-arrow-down.svg"
+                                alt="arrow"
+                                id="1"
+                                class="mr-4 h-2 cursor-pointer"
+                            />
+                        </div>
+                        <h6 class="text-sm text-Dark-grayish-blue hidden">
+                            Click “Forgot password” from the login page or
+                            “Change password” from your profile page. A reset
+                            link will be emailed to you.
+                        </h6>
+                    </div>
+                    <div
+                        class="flex flex-col justify-between gap-2 border-b-border border-Light-grayish-blue pb-4"
+                    >
+                        <div class="flex justify-between items-center">
+                            <h5
+                                class="text-Very-dark-grayish-blue cursor-pointer transition-all hover:text-Soft-red"
+                            >
+                                Can I cancel my subscription?
+                            </h5>
+                            <img
+                                src="../images/icon-arrow-down.svg"
+                                alt="arrow"
+                                id="1"
+                                class="mr-4 h-2 cursor-pointer"
+                            />
+                        </div>
+                        <h6 class="text-sm text-Dark-grayish-blue hidden">
+                            Yes! Send us a message and we’ll process your
+                            request no questions asked.
+                        </h6>
+                    </div>
+                    <div
+                        class="flex flex-col justify-between gap-2 border-b-border border-Light-grayish-blue pb-4"
+                    >
+                        <div class="flex justify-between items-center">
+                            <h5
+                                class="text-Very-dark-grayish-blue cursor-pointer transition-all hover:text-Soft-red"
+                            >
+                                Do you provide additional support?
+                            </h5>
+                            <img
+                                src="../images/icon-arrow-down.svg"
+                                alt="arrow"
+                                id="1"
+                                class="mr-4 h-2 cursor-pointer"
+                            />
+                        </div>
+                        <h6 class="text-sm text-Dark-grayish-blue hidden">
+                            Chat and email support is available 24/7. Phone
+                            lines are open during normal business hours.
+                        </h6>
+                    </div>
                 </div>
             </div>
         </main>
+        <script src="./index.js"></script>
     </body>
 </html>
